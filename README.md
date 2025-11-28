@@ -16,9 +16,9 @@
 | **Display Resolution** | 1366 × 768 (HD) |
 | **Screen Size** | 14 inch |
 | **Graphics** | Intel HD Graphics 620 & NVIDIA GeForce 930MX (disabled) |
-| **RAM** | 8GB / 12GB / 16GB DDR4 (sesuai unit pengguna) |
+| **RAM** | 12GB DDR4 (4GB onboard + 8GB SODIMM) |
 | **Storage** | HDD 1TB + SSD 128GB |
-| **Wi-Fi / Bluetooth** | Qualcomm Atheros (bawaan) |
+| **Wi-Fi / Bluetooth** | Qualcomm Atheros |
 | **Ethernet** | Realtek RTL8168H |
 | **Card Reader** | Realtek USB Based Card Reader |
 | **Webcam** | ASUS UVC Camera |
