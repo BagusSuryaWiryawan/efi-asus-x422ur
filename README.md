@@ -3,7 +3,7 @@
 
 ## macOS Support
 - **Monterey** ✅  
-  (Installer: Olarila)
+  (Installer: Litemint)
 
 ---
 
