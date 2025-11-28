@@ -1,49 +1,81 @@
-# EFI OpenCore – ASUS X442UR (i7-7500U)
+# Asus X442UR – OpenCore Configuration (i7-7500U)
+![Home](https://github.com/basiooo/asus-a442ur-opencore/blob/main/screenshot/home.png?raw=true)
 
-EFI ini dibuat untuk laptop **ASUS X442UR** dengan prosesor **Intel Core i7-7500U (Kaby Lake)**.  
-Konfigurasi disusun untuk mencapai kestabilan terbaik pada macOS menggunakan OpenCore.
-
----
-
-## ✨ Spesifikasi Perangkat
-
-| Komponen | Detail |
-|---------|--------|
-| **Model Laptop** | ASUS X442UR / X442URK |
-| **Prosesor** | Intel Core i7-7500U (2 Cores / 4 Threads, 2.7–3.5 GHz, Kaby Lake) |
-| **iGPU** | Intel HD Graphics 620 |
-| **dGPU** | NVIDIA GeForce 930MX *(tidak digunakan, non-aktif di macOS)* |
-| **RAM** | 8GB / 12GB / 16GB DDR4 (tergantung konfigurasi pengguna) |
-| **Penyimpanan** | HDD / SSD SATA / SSD NVMe (opsional) |
-| **Ukuran Layar** | 14 inci |
-| **Resolusi Layar** | 1366×768 (HD) — beberapa varian menggunakan panel 1080p |
-| **WiFi & Bluetooth** | Realtek / Atheros / Intel *(compatibility berbeda)* |
-| **Audio Codec** | Realtek ALC255 |
-| **Port** | USB 2.0, USB 3.0, USB-C, HDMI, Audio Jack, SD Card |
+## macOS Support
+- **Monterey** ✅  
+  (Installer: Olarila)
 
 ---
 
-## ✔️ Fitur yang Bekerja
+## System Specification
 
-- Intel HD 620 Graphics (QE/CI enabled)
-- Trackpad & Keyboard
-- Audio Output/Input (ALC255)
-- Wi-Fi & Bluetooth *(tergantung kartu yang dipakai)*
-- USB Mapping Stabil
-- Sleep/Wake
-- Battery Status
-- Brightness Control
-- HDMI Output
-
----
-
-## ⚠️ Fitur yang Tidak Berfungsi
-
-- NVIDIA 930MX (tidak kompatibel dengan macOS)
-- Pembaca kartu SD tertentu (tergantung chipset)
-- WiFi bawaan Realtek/Intel mungkin butuh penggantian modul
+| Item | Detail |
+|------|--------|
+| **Model** | ASUS X442UR / X442URK |
+| **CPU** | Intel Core i7-7500U (Kaby Lake, 2C/4T, 2.7–3.5 GHz) |
+| **Display Resolution** | 1366 × 768 (HD) |
+| **Screen Size** | 14 inch |
+| **Graphics** | Intel HD Graphics 620 & NVIDIA GeForce 930MX (disabled) |
+| **RAM** | 8GB / 12GB / 16GB DDR4 (sesuai unit pengguna) |
+| **Storage** | HDD 1TB + SSD 128GB |
+| **Wi-Fi / Bluetooth** | Qualcomm Atheros (bawaan) |
+| **Ethernet** | Realtek RTL8168H |
+| **Card Reader** | Realtek USB Based Card Reader |
+| **Webcam** | ASUS UVC Camera |
+| **Audio** | Realtek ALC255 |
+| **Touchpad** | ELAN1200 |
 
 ---
 
-## 📁 Isi EFI
+## ✅ What's Working (Monterey)
+- Intel HD 620 QE/CI  
+- Power Management  
+- Shutdown / Sleep / Restart  
+- Internal Speaker  
+- Headphone Jack (audio OK)  
+- Trackpad + Gesture  
+- Battery Indicator  
+- Camera  
+- HDMI (video & audio)  
+- Ethernet  
+- Brightness Control  
+- FN Keys  
+- USB Ports (after mapping)  
+- Bluetooth (via Atheros USB/BT module jika tersedia)
 
+---
+
+## ❌ Not Working / Known Issues
+- **NVIDIA 930MX** — tidak didukung macOS  
+- **Internal Microphone** — *not working*  
+- **Qualcomm Atheros Wi-Fi** — tidak kompatibel macOS (Wi-Fi tidak bisa digunakan)  
+- AirDrop / Handoff (karena Wi-Fi tidak kompatibel)  
+- Beberapa fitur Continuity
+
+---
+
+## EFI Structure
+EFI/
+├── BOOT
+└── OC
+├── ACPI
+├── Drivers
+├── Kexts
+├── Resources
+└── config.plist
+
+yaml
+Copy code
+
+---
+
+## Notes
+- Disarankan mengganti Wi-Fi ke card yang **fully macOS-supported**  
+  (contoh: Broadcom BCM94352 / BCM94360)  
+- NVIDIA 930MX otomatis dinonaktifkan karena tidak pernah didukung macOS.  
+- Internal mic pada model ini sering gagal berfungsi di macOS karena codec ALC255 + layout-ID tertentu tidak membaca input device.  
+
+---
+
+## License
+Bebas digunakan untuk pembelajaran & penggunaan pribadi.
