@@ -18,7 +18,7 @@
 | **Graphics** | Intel HD Graphics 620 & NVIDIA GeForce 930MX (disabled) |
 | **RAM** | 12GB DDR4 (4GB onboard + 8GB SODIMM) |
 | **Storage** | HDD 1TB + SSD 128GB |
-| **Wi-Fi / Bluetooth** | Qualcomm Atheros |
+| **Wi-Fi / Bluetooth** | Qualcomm Atheros (Disabled) Change to Realtek Wifi USB  |
 | **Ethernet** | Realtek RTL8168H |
 | **Card Reader** | Realtek USB Based Card Reader |
 | **Webcam** | ASUS UVC Camera |
