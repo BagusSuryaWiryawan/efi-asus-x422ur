@@ -1,5 +1,5 @@
 # Asus X442UR – OpenCore Configuration (i7-7500U)
-![Home](https://github.com/BagusSuryaWiryawan/efi-asus-x422ur/blob/bbcd7caa4dca5323d585300e5bb3de8bee8e12e3/Screenshot)
+![Home](https://github.com/BagusSuryaWiryawan/efi-asus-x422ur/blob/1135c406cedf39ac1e2b3e963ed9031598465bbf/Screenshot)
 
 ## macOS Support
 - **Monterey** ✅  
