@@ -22,7 +22,7 @@
 | **Ethernet** | Realtek RTL8168H |
 | **Card Reader** | Realtek USB Based Card Reader |
 | **Webcam** | ASUS UVC Camera |
-| **Audio** | Realtek ALC255 |
+| **Audio** | Realtek ALC256 (Codec Name) |
 | **Touchpad** | ELAN1200 |
 
 ---
